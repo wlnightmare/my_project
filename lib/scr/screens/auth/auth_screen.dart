@@ -71,14 +71,7 @@ class AuthScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    CupertinoPageRoute(
-                      builder: (context) {
-                        return RegisterScreen();
-                      },
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/auth/register');
                 },
               ),
             ),
