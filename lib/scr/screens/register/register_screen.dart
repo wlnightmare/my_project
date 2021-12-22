@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:my_project/scr/common/widgets/custom_button.dart';
+import 'package:my_project/scr/common/widgets/custom_text_field.dart';
+import 'package:my_project/scr/common/widgets/text_field_divider.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -18,61 +21,26 @@ class RegisterScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(height: 32),
-            CupertinoTextField(
+            CustomTextField(
               placeholder: 'Логин',
-              decoration: BoxDecoration(
-                color: CupertinoColors.white,
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
-            Container(
-              height: 1,
-              color: Color(0xFFE0E6ED),
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-            ),
-            CupertinoTextField(
+            CustomTextFieldDivider(),
+            CustomTextField(
               placeholder: 'Телефон',
-              decoration: BoxDecoration(
-                color: CupertinoColors.white,
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
-            Container(
-              height: 1,
-              color: Color(0xFFE0E6ED),
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-            ),
-            CupertinoTextField(
+            CustomTextFieldDivider(),
+            CustomTextField(
               placeholder: 'Почта',
-              decoration: BoxDecoration(
-                color: CupertinoColors.white,
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
-            Container(
-              height: 1,
-              color: Color(0xFFE0E6ED),
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-            ),
-            CupertinoTextField(
+            CustomTextFieldDivider(),
+            CustomTextField(
               placeholder: 'Пароль',
-              decoration: BoxDecoration(
-                color: CupertinoColors.white,
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
             SizedBox(height: 327),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: CupertinoButton(
-                padding: const EdgeInsets.symmetric(vertical: 20),
-                color: Color(0xFF4631D2),
-                child: Text(
-                  'Создать аккаунт',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              child: CustomButton(
+                title: 'Создать Аккаунт',
                 onPressed: () {},
               ),
             ),
