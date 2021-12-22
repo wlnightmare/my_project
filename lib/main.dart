@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_project/scr/router/router.dart';
 import 'package:my_project/scr/screens/auth/auth_screen.dart';
-import 'package:my_project/scr/screens/register/register_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,12 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      routes: {
-        '/auth/login': (context) => AuthScreen(),
-        '/auth/register': (context) => RegisterScreen(),
-      },
+      onGenerateRoute: AppRouter.generateRoute,
       home: AuthScreen(),
-      //home: RegisterScreen(),
     );
   }
 }
