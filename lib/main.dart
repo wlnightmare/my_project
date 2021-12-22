@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
+      routes: {
+        '/auth/login': (context) => AuthScreen(),
+        '/auth/register': (context) => RegisterScreen(),
+      },
       home: AuthScreen(),
       //home: RegisterScreen(),
     );
