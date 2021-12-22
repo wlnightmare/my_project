@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
+import 'package:my_project/scr/common/constants/color_constants.dart';
+import 'package:my_project/scr/common/constants/padding_constants.dart';
 
 class CustomButton extends StatelessWidget {
   final String title;
@@ -11,8 +13,8 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoButton(
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      color: Color(0xFF4631D2),
+      padding: AppPaddings.vertical,
+      color: AppColors.main,
       child: Text(
         title,
         style: TextStyle(fontWeight: FontWeight.bold),
