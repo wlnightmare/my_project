@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:my_project/scr/common/constants/color_constants.dart';
+import 'package:my_project/scr/common/constants/padding_constants.dart';
 import 'package:my_project/scr/common/widgets/custom_button.dart';
 import 'package:my_project/scr/common/widgets/custom_text_field.dart';
 import 'package:my_project/scr/common/widgets/text_field_divider.dart';
@@ -10,9 +12,9 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      backgroundColor: Color(0xFFF3F4F6),
+      backgroundColor: AppColors.scaffoldBackground,
       navigationBar: CupertinoNavigationBar(
-        backgroundColor: CupertinoColors.white,
+        backgroundColor: AppColors.white,
         border: Border(),
         middle: Text('Авторизация'),
       ),
@@ -36,7 +38,7 @@ class AuthScreen extends StatelessWidget {
 
             //Buttons
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: AppPaddings.horizontal,
               child: CustomButton(
                 title: 'Войти',
                 onPressed: () {},
@@ -46,7 +48,7 @@ class AuthScreen extends StatelessWidget {
             SizedBox(height: 19),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: AppPaddings.horizontal,
               child: CustomButton(
                 title: 'Зарегистрироваться',
                 onPressed: () {
