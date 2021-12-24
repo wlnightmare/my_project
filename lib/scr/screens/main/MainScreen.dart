@@ -13,7 +13,8 @@ class MainScreen extends StatelessWidget {
         tabBar: CupertinoTabBar(
           items: [
             BottomNavigationBarItem(icon: Icon(CupertinoIcons.home)),
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.gift)),
+            BottomNavigationBarItem(icon: Icon(CupertinoIcons.map)),
+            BottomNavigationBarItem(icon: Icon(CupertinoIcons.heart)),
             BottomNavigationBarItem(icon: Icon(CupertinoIcons.person)),
           ],
         ),
@@ -30,7 +31,7 @@ class MainScreen extends StatelessWidget {
                 case 3:
                   return RegisterScreen(); //Карта
                 default:
-                  return RegisterScreen();
+                  return AuthScreen();
               }
             },
           );
