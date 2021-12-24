@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
+import 'package:my_project/scr/common/constants/color_constants.dart';
 
 class CustomTextField extends StatelessWidget {
   final String placeholder;
@@ -14,7 +15,7 @@ class CustomTextField extends StatelessWidget {
     return CupertinoTextField(
       placeholder: placeholder,
       decoration: BoxDecoration(
-        color: CupertinoColors.white,
+        color: AppColors.white,
       ),
       padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
     );
